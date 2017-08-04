@@ -3,6 +3,7 @@ from invoke import task, run
 import os
 import sys
 import site
+print('***hi')
 print(sys.executable)
 print(site.getsitepackages())
 import yaml
