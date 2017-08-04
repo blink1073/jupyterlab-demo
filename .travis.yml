@@ -19,7 +19,7 @@ install:
   - conda info -a
   - conda install pip
   - pip install invoke
-  - pip install -U yaml
+  - pip install pyyaml
 script:
   - invoke environment
   - invoke demofiles
