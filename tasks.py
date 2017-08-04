@@ -6,6 +6,7 @@ import site
 print('***hi')
 print(sys.executable)
 print(site.getsitepackages())
+print (os.listdir(site.getsitepackages()[0]))
 import yaml
 import shutil
 import pdb
