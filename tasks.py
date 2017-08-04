@@ -1,6 +1,10 @@
 from __future__ import print_function
 from invoke import task, run
 import os
+import sys
+import site
+print(sys.executable)
+print(site.getsitepackages())
 import yaml
 import shutil
 import pdb
