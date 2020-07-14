@@ -8,6 +8,16 @@ rm -rf notebooks
 rm -rf narrative
 rm -rf slides
 rm demo/notebooks/Julia.ipynb
+
+conda install -c conda-forge xeus-cling xwidgets xeus-python
+npm install -g ijavascript
+ijsinstall
+pip install --upgrade jupyterlab-git
+jupyter labextension install @jupyterlab/git
+
+git clone git@github.com:jupyter-xeus/xeus-cling.git
+git clone git@github.com:jupyter-xeus/xwidgets.git
+
 jupyter lab clean
 
 # Setup a workspace
